@@ -1,6 +1,6 @@
+// import mongoose from 'mongoose';
 const mongoose = require('mongoose');
 //from mongoosejs.com
-import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const UserSchema = new Schema({
