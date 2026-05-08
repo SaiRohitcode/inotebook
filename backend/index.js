@@ -27,3 +27,4 @@ app.listen(port, () => {
 //nodemon -v
 //npm i -D nodemon in terminal to install
 //nodemon .\index.js to automatically run
+//npm install express-validator
