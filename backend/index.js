@@ -28,3 +28,5 @@ app.listen(port, () => {
 //npm i -D nodemon in terminal to install
 //nodemon .\index.js to automatically run
 //npm install express-validator
+//npm i bcryptjs for hashing
+//npm install jsonwebtoken
