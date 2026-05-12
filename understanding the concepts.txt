@@ -1,0 +1,25 @@
+backend
+npx create-react-app inotebook
+//npm install mongoose
+//npm install -g nodemon
+//nodemon -v
+//npm i -D nodemon in terminal to install
+//nodemon .\index.js to automatically run
+//npm install express-validator
+//npm i bcryptjs for hashing
+//npm install jsonwebtoken
+
+This is to run both frontend and backend simultaneously in single terminal
+This is to be done in the 
+ "scripts": {
+    "both" : "concurrently \"npm run start\" \"nodemon backend/index.js\""
+  },
+
+for the navbar routing
+https://v5.reactrouter.com/web/guides/quick-start
+
+
+// for formatting the document
+alt+shift+f
+// to change the tag at both sides
+Settings → search "Linked Editing"
