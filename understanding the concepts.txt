@@ -23,3 +23,8 @@ https://v5.reactrouter.com/web/guides/quick-start
 alt+shift+f
 // to change the tag at both sides
 Settings → search "Linked Editing"
+
+
+
+// cd backend
+npm install cors

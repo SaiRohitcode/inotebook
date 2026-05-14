@@ -10,17 +10,21 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import { Home } from './components/Home';
 import NoteState from './context/notes/NoteState';
+import Alert from './components/Alert';
 
 function App() {
   return (
     <NoteState>
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Navbar />
+        <Alert message = {"This is an alert"}/>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </Router>
     </NoteState>
   );
 }
