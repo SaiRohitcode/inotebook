@@ -74,7 +74,8 @@ router.post('/login',[
         const passwordCompare = await bcrypt.compare(password, user.password);
         // it automatically verifies the hashkeys
         if(!passwordCompare){
-            return res.status(400).json({error: "Please enter the details with correct credentials"});
+            success = false;
+            return res.status(400).json({success, error:"Please enter the details with correct credentials"});
         }
         const payload = {
             user: {
@@ -82,7 +83,7 @@ router.post('/login',[
             }
         }
         const authToken = jwt.sign(payload, JWT_SECRET);
-        res.json({authToken : authToken});
+        res.json({success : true, authtoken : authToken});
     }catch(error){
         console.error(error.message);
         res.status(500).send("Internal server error");
